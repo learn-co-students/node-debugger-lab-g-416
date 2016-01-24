@@ -10,7 +10,7 @@ var test = require('tape'),
 
 test('node version', function (t) {
   t.plan(2)
-  child = cp.exec('node account-fixed',
+  child = cp.exec('node account',
   function (error, stdout, stderr) {
     console.log('stdout: ' + stdout)
     console.log('stderr: ' + stderr)
