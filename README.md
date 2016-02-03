@@ -3,8 +3,8 @@
 ## Objectives
 
 1. Use Node built-in debugger by putting statements into a given script to find a problem by using debugger
-1. Launch debugger
-2. Fix the script
+2. Launch debugger
+3. Fix the script
 
 
 
