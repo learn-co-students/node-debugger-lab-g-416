@@ -3,12 +3,14 @@
 ## Objectives
 
 1. Use Node built-in debugger by putting statements into a given script to find a problem by using debugger
-2. Launch debugger
-3. Fix the script
+1. Launch debugger
+2. Fix the script
 
 
 
 ## Introduction
+
+You've been hired by XYZ bank to fix some of their account creation code. They had some bad developers in the past that left some bugs in the code. Your job is to fix all the issues and get the code functional again.
 
 In this lab, you'll debug a Node script which has an issue.
 
@@ -19,7 +21,7 @@ In this lab, you'll debug a Node script which has an issue.
 3. Put some `debugger` statements in `account.js`
 4. Launch in debug mode with `$ node debug account`
 5. Track issue
-6. Fix the file
+6. Fix the file. Hint: there are 3 issues to fix.
 7. Run test with `$ npm test`
 
 
