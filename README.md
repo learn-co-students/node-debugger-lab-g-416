@@ -10,6 +10,8 @@
 
 ## Introduction
 
+You've been hired by XYZ bank to fix some of their account creation code. They had some bad developers in the past that left some bugs in the code. Your job is to fix all the issues and get the code functional again.
+
 In this lab, you'll debug a Node script which has an issue.
 
 ## Instructions
@@ -19,7 +21,7 @@ In this lab, you'll debug a Node script which has an issue.
 3. Put some `debugger` statements in `account.js`
 4. Launch in debug mode with `$ node debug account`
 5. Track issue
-6. Fix the file
+6. Fix the file. Hint: there are 3 issues to fix. 
 7. Run test with `$ npm test`
 
 
@@ -33,8 +35,8 @@ Account after opening:  { balance: 1250,
   checking: '1',
   type: 'checking' }
 ```
-  
-  
+
+
 ## Solution
 
 ```js
@@ -42,7 +44,7 @@ var customerAccount = {
   balance: 0,
   name: 'Azat Mardan',
   checking: '1' // Use number to avoid issues with ===
-} 
+}
 function setAccountType () {
   if (customerAccount.checking === 1) { // Use == to convert the type
     customerAccount.type = 'checking'
@@ -53,7 +55,7 @@ function setAccountType () {
 
 var signupBonus = 250,
   deposit = 1000
-  
+
 var openAccount = function(account, deposit) {
   account.balance += signupBonus
   console.log('New balance after signup bonus is %s', account.balance)
