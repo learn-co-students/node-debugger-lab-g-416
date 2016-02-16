@@ -33,36 +33,3 @@ Account after opening:  { balance: 1250,
   checking: '1',
   type: 'checking' }
 ```
-
-
-## Solution
-
-```js
-var customerAccount = {
-  balance: 0,
-  name: 'Azat Mardan',
-  checking: '1' // Use number to avoid issues with ===
-}
-function setAccountType () {
-  if (customerAccount.checking === 1) { // Use == to convert the type
-    customerAccount.type = 'checking'
-  } else {
-    customerAccount.type = 'savings'
-  }
-}
-
-var signupBonus = 250,
-  deposit = 1000
-
-var openAccount = function(account, deposit) {
-  account.balance += signupBonus
-  console.log('New balance after signup bonus is %s', account.balance)
-  account.balance += deposit
-}
-
-console.log('Account before opening: ', 'customerAccount') // Remove quotes around the variable name
-
-openAccount(customerAccount) // <<<--- Pass the deposit amount
-setAccountType()
-console.log('Account after opening: ', customerAccount)
-```
