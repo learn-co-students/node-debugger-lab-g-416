@@ -1,0 +1,23 @@
+{
+  "name": "node-debugger-lab",
+  "version": "1.0.0",
+  "description": "Debug a Script Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/node-debugger-lab.git"
+  },
+  "author": "Azat Mardan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/node-debugger-lab/issues"
+  },
+  "homepage": "https://github.com/learn-co-curriculum/node-debugger-lab#readme",
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "chai": "3.5.0"
+  }
+}
