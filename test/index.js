@@ -1,4 +1,5 @@
-var expectedOutput = { 'Account before opening':
+var expectedOutput = { 
+  'Account before opening':
    { balance: 1250,
      name: 'Azat Mardan',
      checking: '1',
@@ -8,7 +9,8 @@ var expectedOutput = { 'Account before opening':
    { balance: 1250,
      name: 'Azat Mardan',
      checking: '1',
-     type: 'checking' } }
+     type: 'checking' } 
+   }
 
 
 var expect = require('chai').expect
