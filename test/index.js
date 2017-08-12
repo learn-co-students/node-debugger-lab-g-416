@@ -1,5 +1,5 @@
 var expectedOutput = { 'Account before opening':
-   { balance: 1250,
+   { balance: 0,
      name: 'Azat Mardan',
      checking: '1',
      type: 'checking' },
