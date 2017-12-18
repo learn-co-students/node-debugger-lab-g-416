@@ -17,8 +17,8 @@ var path = require('path')
 describe('account.js', function () {
   it('must return the desired output', function(done){
     var actualOutput = require(path.join(__dirname, '..', 'account'))()
-    // console.log(actualOutput)
-    // console.log(expectedOutput)
+    console.log(actualOutput)
+    console.log(expectedOutput)
     expect(actualOutput).to.deep.equal(expectedOutput)
     done()
   })
