@@ -1,16 +1,19 @@
 module.exports = function() {
+  
   var output = {}
   var customerAccount = {
     balance: 0,
     name: 'Azat Mardan',
-    checking: '1'
+    checking: "1",
+    type: ''
   }
 
+
   function setAccountType () {
-    if (customerAccount.checking === 1) {
-      customerAccount.type = 'checking'
+    if (customerAccount.checking === "1") {
+      return customerAccount.type = 'checking'
     } else {
-      customerAccount.type = 'savings'
+      return customerAccount.type = 'savings'
     }
   }
 
@@ -23,10 +26,10 @@ module.exports = function() {
     account.balance += deposit
   }
 
-  output['Account before opening'] = 'customerAccount'
+  output['Account before opening'] = customerAccount
 
-  openAccount(customerAccount)
   setAccountType()
+  openAccount(customerAccount, deposit)
   output['Account after opening'] = customerAccount
   return output
 }
