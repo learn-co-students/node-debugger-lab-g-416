@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function () {
   var output = {}
   var customerAccount = {
     balance: 0,
@@ -6,27 +6,27 @@ module.exports = function() {
     checking: '1'
   }
 
-  function setAccountType () {
-    if (customerAccount.checking === 1) {
+  var setAccountType = function () {
+    if (customerAccount.checking == 1) {
       customerAccount.type = 'checking'
     } else {
       customerAccount.type = 'savings'
     }
+    output['Account before opening'] = customerAccount
+    return customerAccount
   }
 
   var signupBonus = 250,
     deposit = 1000
 
-  var openAccount = function(account, deposit) {
-    account.balance += signupBonus
-    output['New balance after signup bonus is '] = account.balance
-    account.balance += deposit
+  var newAccount =  Object.assign({}, setAccountType())
+
+  var openAccount = function(newAccount, deposit) {
+    newAccount.balance += signupBonus
+    output['New balance after signup bonus is '] = newAccount.balance
+    newAccount.balance += deposit
+    output['Account after opening'] = newAccount
   }
-
-  output['Account before opening'] = 'customerAccount'
-
-  openAccount(customerAccount)
-  setAccountType()
-  output['Account after opening'] = customerAccount
+  openAccount(newAccount, deposit)
   return output
 }
