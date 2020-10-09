@@ -23,7 +23,7 @@ module.exports = function() {
     account.balance += deposit
   }
 
-  output['Account before opening'] = 'customerAccount'
+  output['Account before opening'] = customerAccount
 
   openAccount(customerAccount)
   setAccountType()
